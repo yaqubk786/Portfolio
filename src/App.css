@@ -1,38 +1,404 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header{
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+justify-content: flex-end;
+padding: 25px;
+position: fixed;
+/* justify-content: space-between; */
+  
+}
+.header > div{
+  border-style: solid;
+  border-width: 0px;
+  /* background-color: lightcoral; */
+  width: 100px;
+  height: 50px;
+  text-align: center;
+ padding-top: 10px;
+}
+  
+.name{
+  margin-right: 410px;
+  font-weight: bold;
+}
+.topdiv{
+  height: 350px;
+  background-color: #1e996f;
+  padding-left: 150px;
+  padding-top: 110px;
+}.a{
+  color: yellow;
+  font-weight: lighter;
+}
+.b{
+  color: white;
+}
+.ptag{
+  padding-top:40px;
+  color: white;
+}
+button{
+  padding:10px;
+  width: 130px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border-width: 0;
+  color: white;
+  cursor: pointer;
+
+}
+.b1{
+  background-color: #5fcfcf;
+
+}
+.b2{
+  margin-left: 20px;
+  background-color: #efef42;
+
+}
+.b1:hover{
+  transform: scale(1.1,1);
+  
+}
+.about{
+  height: 400px;
+  width: 1000px;
+  background-color: white;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 4px 4px 12px gray;
+}
+.boy{
+  height: 400px;
+  width: 450px;
+  border-radius: 20px;
+}
+.am-box1{
+  height: 250px;
+  width: 450px;
+  background: transparent;
+  /* background-color: tomato; */
+  float: right;
+  margin-right: 25px;
+  margin-top: 20px;
+}
+.am-box2{
+  margin-right: 25px;
+  width: 450px;
+  background-color:white;
+  height: 100px;
+  margin-top: -130px;
+  margin-left: 525px;
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px gray;
+
+}
+.hr-a{
+  margin-right: 270px;
+  height: 7px;
+    background-color: yellow;
+    border-width: 0;
+}
+.hr-b{
+  margin-left: 250px;
+  margin-top: -8px;
+}
+.am-p{
+  color: darkblue;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.icons{
+  padding: 5px;
+   font-size: 22px;
+   padding-left: 26px;
+}
+.netlify{
+  height: 20px;
+}
+
+.pf-head{
+  text-align: center;
+  margin-top: 50px;
+}
+.pf-hr{
+  margin-right: 571px;
+  margin-left: 571px;
+
+  height: 7px;
+    background-color: yellow;
+    border-width: 0;
+}
+.pf-div1{
+  width: 1000px;
+  margin:auto;
+  height:290px;
+  background-color: yellowgreen;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  background: transparent;
+
+
+}
+.subdiv{
+  width: 330px;
+  height: 285px;
+  padding: 10px;
+  background-color: tomato;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+ background-repeat: no-repeat;
+ transition: 1s;
+
+
+}
+.subdiv:hover{
+  transform: translateY(-15px);
+
+
+
+}
+.pf-div2{
+  width: 1000px;
+  margin:auto;
+  height:290px;
+  background-color: yellowgreen;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-around;
+  background: transparent;
+
+}
+.pr-pics{
+  border-radius: 20px;
+  transition: 1s;
+}
+.pr-pics:hover{
+  transform: translateY(-15px);
+}
+.rs-h{
+  text-align: center;
+  margin-top: 50px;
+  color: rgb(8, 153, 189);
+}
+.rs-div1{
+  width: 1000px;
+  height:290px;
+  margin: auto;
+  background-color:orangered;
+  margin-top: 20px;
+  background: transparent;
+}
+.rs-box1{
+  width: 500px;
+    height: 285px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: crimson;
+    background: transparent;
+
+}
+.rsp-a{
+  font-size: 20px;
+}
+.rsp-b{
+  font-size: 20px;
+  margin-top: 20px;
+}
+.rs-hr{
+  margin-top: 10px;
+
+}
+.rs-ul{
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.pb{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.rs-s{
+  height: 23px;
+  width: 130px;
+  color: white;
+  background-color: orange;
+  float: right;
+  margin-top: -20px;
+  border-radius: 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mypic{
+  height: 290px;
+    width: 310px;
+    border-radius: 20px;
+    float: right;
+    margin-top: -285px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.links{
+  height: 225px;
+  width: 69px;
+ background-color: whitesmoke;
+ margin-left: 570px;
+ margin-top: -246px;
+  position: absolute;
+  border-radius: 20px;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.link-list{
+  font-size: 40px;
+  margin-left: 17px;
+  list-style-type: none;
+}
+.pp-head{
+  text-align:center;
+  margin-top: 50px;
+}
+.pp-hr{
+  margin-right: 471px;
+  margin-left: 471px;
+  height: 7px;
+  background-color: yellow;
+  border-width: 0;
+}
+.pp-div1{
+  width: 1000px;
+  height: 320px;
+  margin: auto;
+  background-color: whitesmoke;
+  margin-top: 20px;
+  border-radius: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+  box-shadow: 4px 4px 12px grey;
+}
+.pp-box{
+  height: 310px;
+  width: 280px;
+  margin: 5px;
+  /* background-color: hotpink; */
+
+  text-align: center;
+}
+.aq-pic{
+  height: 110px;
+  width: 130px;
+  border-radius: 120px;
+}
+.c-div1{
+  width: 1000px;
+  height: 300px;
+  margin: auto;
+  /* background-color: indianred; */
+  margin-top: 30px;
+  /* border-radius: 20px; */
+  display: flex;
+}
+.c-subdiv-1{
+  height: 300px;
+  width: 500px;
+  color: black;
+  background-color:whitesmoke;
+  margin: 1px;
+  /* border-radius: 20px; */
+  text-align: center;
+  padding-top: 10px;
+
+}
+.c-subdiv-2 {
+  height: 300px;
+  width: 500px;
+  background-color: #ffbebe;
+  padding-top: 10px;
+
+  /* margin: 1px; */
+  /* border-radius: 20px; */
+  /* text-align: center;
+   */
+   padding-left: 110px;
+  
+}
+.connect-link{
+  list-style-type: none;
+  font-size: 20px;
+  padding-top: 55px;
+}
+.fa-envelope-square{
+padding-right: 20px;
+}
+.con{
+  margin-top: 5px;
+}
+input{
+  width: 310px;
+  border-radius: 5px;
+  border-width: 0;
+  height: 20px;
+}
+form{
+  padding-top: 20px;
+}
+.submit{
+  width: 100px;
+  height: 30px;
+  color: white;
+  background-color: orange;
+  border-radius: 5px;
+  border-width: 0;
+  margin-top: 10px;
+}
+textarea{
+  border-radius: 5px;
+  border-width: 0;
+
+}
+footer{
+  background-color: brown;
+  text-align: center;
+  height: 60px;
+  padding: 20px;
+  margin-top: 30px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
